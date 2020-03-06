@@ -9,9 +9,9 @@ from django.shortcuts import get_object_or_404
 # Create your views here.
 
 
-def index(request):
+""" def index(request):
     nota = 'Note test example'
-    apiario = get_object_or_404(Apiario, code='666')
+    apiario = get_object_or_404(Apiario, apicoltore=request.user, code='666')
     arnia = get_object_or_404(Arnia, apiario=apiario, code='A')
     newnote = Nota(
         arnia=arnia,
@@ -19,4 +19,4 @@ def index(request):
     )
     newnote.save()
     send_email_task(nota)
-    return HttpResponse('<h1>Email has been sent</h1>')
+    return HttpResponse('<h1>Email has been sent</h1>') """
